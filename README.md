@@ -1,10 +1,7 @@
-# thoughtbot Middleman Starter
+# Screenshot Productions
 
-## About
+A static website for immersive art collective Screenshot Productions, utilizing Middleman.
 
-This starter kit for Middleman follows the
-[thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
-favorite front end tools.
 
 ## About Middleman
 
