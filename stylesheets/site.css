@@ -347,41 +347,43 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 4, neat/grid/_box-sizing.scss */
+/* line 4, vendor/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
-/* line 9, neat/grid/_box-sizing.scss */
+/* line 9, vendor/neat/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
 /* line 6, site.css.scss */
 body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+  background: #EEF1F4;
+  color: rgba(39, 48, 53, 0.8);
+  text-align: left;
+  font-family: "freight-text-pro", "adobe-garamond-pro", serif;
+  font-weight: 400;
+  font-size: 0.875em; }
 
-/* line 13, site.css.scss */
+/* line 15, site.css.scss */
 .logo img {
   height: 18.75em;
   margin-top: 6em; }
 
-/* line 18, site.css.scss */
+/* line 20, site.css.scss */
 h1 {
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "adobe-garamond-pro", "freight-text-pro", serif;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0; }
 
-/* line 26, site.css.scss */
+/* line 39, site.css.scss */
 .doc {
   margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "freight-text-pro", "adobe-garamond-pro", serif;
   font-size: 1.1em;
   font-weight: 300; }
-  /* line 32, site.css.scss */
+  /* line 45, site.css.scss */
   .doc a {
     border: 1px solid white;
     border-radius: 3px;
@@ -389,13 +391,24 @@ h1 {
     color: white;
     text-decoration: none;
     transition: color 0.1s linear; }
-    /* line 39, site.css.scss */
+    /* line 52, site.css.scss */
     .doc a:hover {
       background: rgba(0, 0, 0, 0.2);
       color: white;
       transition: all 0.15s linear; }
 
-/* line 47, site.css.scss */
+/* line 60, site.css.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, vendor/bourbon/addons/_clearfix.scss */
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 62, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
