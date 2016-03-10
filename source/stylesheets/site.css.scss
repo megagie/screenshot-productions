@@ -1,13 +1,15 @@
 @charset "utf-8";
 @import "normalize";
-@import "bourbon/bourbon";
-@import "neat/neat";
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
 
 body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  background: #EEF1F4;
+  color: rgba(39, 48, 53, 0.8);
+  text-align: left;
+  font-family: "freight-text-pro", "adobe-garamond-pro", serif;
+  font-weight: 400;
+  font-size: 0.875em;
 }
 
 .logo img {
@@ -17,15 +19,26 @@ body {
 
 h1 {
   color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "adobe-garamond-pro", "freight-text-pro", serif;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0;
 }
 
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+p {}
+
+
 .doc {
   margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:"freight-text-pro", "adobe-garamond-pro", serif;
   font-size: 1.1em;
   font-weight: 300;
 
@@ -43,6 +56,8 @@ h1 {
     }
   }
 }
+
+.container{@include outer-container(100%)}
 
 .welcome {
   -webkit-animation-name: welcome;

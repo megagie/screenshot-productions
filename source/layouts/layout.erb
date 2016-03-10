@@ -9,6 +9,8 @@
     <title><%= current_page.data.title %></title>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://use.typekit.net/ovg7dgq.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
@@ -17,5 +19,9 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
   </body>
 </html>
