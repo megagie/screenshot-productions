@@ -522,30 +522,36 @@ section {
     /* line 191, site.css.scss */
     .navigation li.nav-link a {
       padding-right: 1em; } }
+/* line 198, site.css.scss */
+.navigation.button {
+  text-transform: none;
+  color: #273035;
+  border: solid 1px #273035;
+  border-radius: 3px; }
 
-/* line 205, site.css.scss */
+/* line 212, site.css.scss */
 .hero.container {
   align-items: center;
-  background: no-repeat url("/screenshot-productions/images/screenshot-hero-bg.jpg");
+  background: no-repeat center center fixed url("/screenshot-productions/images/screenshot-hero-bg.jpg");
   background-position: right;
   background-size: cover;
   min-height: 75em;
   margin-top: -10em; }
 @media screen and (min-width: 50em) {
-  /* line 202, site.css.scss */
+  /* line 209, site.css.scss */
   .hero {
     background-size: cover;
     background-position: left; } }
-/* line 219, site.css.scss */
+/* line 226, site.css.scss */
 .hero .hero-logo {
   margin: auto; }
 @media screen and (min-width: 50em) {
-  /* line 223, site.css.scss */
+  /* line 230, site.css.scss */
   .hero.content {
     text-align: left;
     padding-top: 10em; } }
 
-/* line 237, site.css.scss */
+/* line 244, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
