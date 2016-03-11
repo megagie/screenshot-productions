@@ -195,6 +195,13 @@ section {
       padding-right: 1em;
     }
   }
+  &.button {
+    text-transform: none;
+    color: #273035;
+    border: solid 1px #273035;
+    border-radius: 3px;
+
+  }
 }
 
 // Hero
@@ -204,7 +211,7 @@ section {
   
   &.container {
     align-items: center;
-    background: no-repeat image_url("/images/screenshot-hero-bg.jpg");
+    background: no-repeat center center fixed image_url("/images/screenshot-hero-bg.jpg");
     background-position: right;
     background-size: cover;
     min-height: 75em;
