@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import "normalize";
+@import "typeography";
+$visual-grid: true;
+$visual-grid-color: #DD9D9D;
+$visual-grid-opacity: 0.4;
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
 
@@ -10,6 +14,15 @@ body {
   font-family: "freight-text-pro", "adobe-garamond-pro", serif;
   font-weight: 400;
   font-size: 0.875em;
+}
+
+a {
+  text-decoration: none;
+  color: #7B838D;
+    
+    &:hover {
+      color:#3E7593;
+    }
 }
 
 .logo img {
@@ -36,6 +49,8 @@ h5 {}
 p {}
 
 
+
+
 .doc {
   margin: 3em 0;
   font-family:"freight-text-pro", "adobe-garamond-pro", serif;
@@ -57,7 +72,132 @@ p {}
   }
 }
 
-.container{@include outer-container(100%)}
+
+section {
+  @include outer-container;
+}
+
+.container{
+  @include outer-container(100%);
+  @include omega;
+
+}
+
+
+
+// Navigation
+
+.navigation {
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
+
+  // Mobile view
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    padding-top: 0.5em;
+
+    @include media ($medium-screen) {
+      display: none;
+    }
+  }
+
+  // Nav menu
+  .navigation-wrapper {
+    @include clearfix;
+    position: relative;
+  }
+
+  .logo {
+    float: left;
+
+    @include media ($medium-screen) {
+      float: none;
+      text-align: center;
+      display: block;
+    }
+
+    @include media ($large-screen) {
+      float: left;
+    }
+
+    img {
+      @include media ($medium-screen) {
+        max-height: 80px;
+        padding-right: 16em;
+        margin-top: -.8em;
+        margin-left: -13.5em;
+      }
+
+      @include media ($large-screen) {
+        max-height: 120px;
+        padding-right: 16em;
+        margin-top: -.8em;
+        margin-left: -13.5em;
+      }
+    }
+  }  
+
+  nav {
+    float: none;
+
+    @include media ($medium-screen) {
+      float: left;
+      text-align: center;
+      line-height: 1.5em;
+      padding-top: 4.2em;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+
+    @include media ($medium-screen) {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: #7B838D;
+    text-transform: uppercase;
+    font-family: "adobe-garamond-pro", "freight-text-pro", serif;
+
+    @include media ($medium-screen) {
+      background: transparent;
+      display: inline;
+      text-decoration: none;
+      width: auto;
+    }
+  }
+
+  li.nav-link a {
+    display: inline-block;
+
+    @include media ($large-screen) {
+      padding-right: 1em;
+    }
+  }
+}
+
+
+
+// Thoughtbot
 
 .welcome {
   -webkit-animation-name: welcome;
