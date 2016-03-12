@@ -355,6 +355,26 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* line 12, vendor/neat/grid/_visual-grid.scss */
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 960px;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
 /* line 10, site.css.scss */
 body {
   background: #EEF1F4;
@@ -385,13 +405,22 @@ h1 {
   font-weight: 400;
   margin: 0; }
 
-/* line 56, site.css.scss */
+/* line 45, site.css.scss */
+h2.quote {
+  font-family: "freight-text-pro", "adobe-garamond-pro", serif;
+  color: #3E7593;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.25em;
+  letter-spacing: -.28px; }
+
+/* line 67, site.css.scss */
 .doc {
   margin: 3em 0;
   font-family: "freight-text-pro", "adobe-garamond-pro", serif;
   font-size: 1.1em;
   font-weight: 300; }
-  /* line 62, site.css.scss */
+  /* line 73, site.css.scss */
   .doc a {
     border: 1px solid white;
     border-radius: 3px;
@@ -399,13 +428,13 @@ h1 {
     color: white;
     text-decoration: none;
     transition: color 0.1s linear; }
-    /* line 69, site.css.scss */
+    /* line 80, site.css.scss */
     .doc a:hover {
       background: rgba(0, 0, 0, 0.2);
       color: white;
       transition: all 0.15s linear; }
 
-/* line 78, site.css.scss */
+/* line 89, site.css.scss */
 section {
   max-width: 960px;
   margin-left: auto;
@@ -416,7 +445,7 @@ section {
     content: "";
     display: table; }
 
-/* line 82, site.css.scss */
+/* line 93, site.css.scss */
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -428,17 +457,17 @@ section {
     content: "";
     display: table; }
 
-/* line 97, site.css.scss */
+/* line 108, site.css.scss */
 .navigation .navigation-menu-button {
   display: block;
   float: right;
   margin: 0;
   padding-top: 0.5em; }
   @media screen and (min-width: 30em) {
-    /* line 97, site.css.scss */
+    /* line 108, site.css.scss */
     .navigation .navigation-menu-button {
       display: none; } }
-/* line 109, site.css.scss */
+/* line 120, site.css.scss */
 .navigation .navigation-wrapper {
   position: relative; }
   /* line 20, vendor/bourbon/addons/_clearfix.scss */
@@ -446,44 +475,44 @@ section {
     clear: both;
     content: "";
     display: table; }
-/* line 114, site.css.scss */
+/* line 125, site.css.scss */
 .navigation .logo {
   float: left; }
   @media screen and (min-width: 30em) {
-    /* line 114, site.css.scss */
+    /* line 125, site.css.scss */
     .navigation .logo {
       float: none;
       text-align: center;
       display: block; } }
   @media screen and (min-width: 50em) {
-    /* line 114, site.css.scss */
+    /* line 125, site.css.scss */
     .navigation .logo {
       float: left; } }
   @media screen and (min-width: 30em) {
-    /* line 127, site.css.scss */
+    /* line 138, site.css.scss */
     .navigation .logo img {
       max-height: 80px;
       padding-right: 16em;
       margin-top: -.8em;
       margin-left: -13.5em; } }
   @media screen and (min-width: 50em) {
-    /* line 127, site.css.scss */
+    /* line 138, site.css.scss */
     .navigation .logo img {
       max-height: 120px;
       padding-right: 16em;
       margin-top: -.8em;
       margin-left: -13.5em; } }
-/* line 144, site.css.scss */
+/* line 155, site.css.scss */
 .navigation nav {
   float: none; }
   @media screen and (min-width: 30em) {
-    /* line 144, site.css.scss */
+    /* line 155, site.css.scss */
     .navigation nav {
       float: left;
       text-align: center;
       line-height: 1.5em;
       padding-top: 4.2em; } }
-/* line 155, site.css.scss */
+/* line 166, site.css.scss */
 .navigation ul.navigation-menu {
   clear: both;
   display: none;
@@ -492,15 +521,15 @@ section {
   padding: 0;
   width: 100%; }
   @media screen and (min-width: 30em) {
-    /* line 155, site.css.scss */
+    /* line 166, site.css.scss */
     .navigation ul.navigation-menu {
       display: block;
       margin: 0;
       padding: 0; } }
-  /* line 169, site.css.scss */
+  /* line 180, site.css.scss */
   .navigation ul.navigation-menu.show {
     display: block; }
-/* line 175, site.css.scss */
+/* line 186, site.css.scss */
 .navigation ul li.nav-link {
   display: block;
   text-align: right;
@@ -509,49 +538,200 @@ section {
   text-transform: uppercase;
   font-family: "adobe-garamond-pro", "freight-text-pro", serif; }
   @media screen and (min-width: 30em) {
-    /* line 175, site.css.scss */
+    /* line 186, site.css.scss */
     .navigation ul li.nav-link {
       background: transparent;
       display: inline;
       text-decoration: none;
       width: auto; } }
-/* line 191, site.css.scss */
+/* line 202, site.css.scss */
 .navigation li.nav-link a {
   display: inline-block; }
   @media screen and (min-width: 50em) {
-    /* line 191, site.css.scss */
+    /* line 202, site.css.scss */
     .navigation li.nav-link a {
       padding-right: 1em; } }
-/* line 198, site.css.scss */
+/* line 209, site.css.scss */
 .navigation.button {
   text-transform: none;
   color: #273035;
   border: solid 1px #273035;
   border-radius: 3px; }
 
-/* line 212, site.css.scss */
+/* line 223, site.css.scss */
 .hero.container {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
   align-items: center;
-  background: no-repeat center center fixed url("/screenshot-productions/images/screenshot-hero-bg.jpg");
+  background: no-repeat center center url("/screenshot-productions/images/screenshot-hero-bg.jpg");
   background-position: right;
   background-size: cover;
-  min-height: 75em;
+  min-height: 77em;
   margin-top: -10em; }
 @media screen and (min-width: 50em) {
-  /* line 209, site.css.scss */
+  /* line 220, site.css.scss */
   .hero {
     background-size: cover;
     background-position: left; } }
-/* line 226, site.css.scss */
+/* line 238, site.css.scss */
 .hero .hero-logo {
   margin: auto; }
-@media screen and (min-width: 50em) {
-  /* line 230, site.css.scss */
-  .hero.content {
-    text-align: left;
-    padding-top: 10em; } }
+/* line 242, site.css.scss */
+.hero.content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  /* line 89, vendor/neat/grid/_span-columns.scss */
+  .hero.content:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 50em) {
+    /* line 242, site.css.scss */
+    .hero.content {
+      text-align: left;
+      padding-top: 8em;
+      padding-left: 4.5em; } }
+  /* line 251, site.css.scss */
+  .hero.content p {
+    padding-left: 1em; }
 
-/* line 244, site.css.scss */
+/* line 279, site.css.scss */
+.modal label {
+  cursor: pointer;
+  margin-bottom: 0; }
+/* line 284, site.css.scss */
+.modal label img {
+  border-radius: 150px;
+  display: block;
+  max-width: 300px; }
+/* line 290, site.css.scss */
+.modal .modal-state {
+  display: none; }
+/* line 294, site.css.scss */
+.modal .modal-trigger {
+  padding: 0.8em 1em; }
+/* line 298, site.css.scss */
+.modal .modal-fade-screen {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 53.75em) {
+    /* line 298, site.css.scss */
+    .modal .modal-fade-screen {
+      padding-top: 10em; } }
+  /* line 312, site.css.scss */
+  .modal .modal-fade-screen .modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer; }
+/* line 318, site.css.scss */
+.modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer; }
+  /* line 324, site.css.scss */
+  .modal .modal-close:after, .modal .modal-close:before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: '';
+    display: block;
+    margin: -3px 0 0 -1px; }
+  /* line 335, site.css.scss */
+  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+    background: #c4c4c4; }
+  /* line 340, site.css.scss */
+  .modal .modal-close:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+/* line 345, site.css.scss */
+.modal .modal-inner {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 0;
+  margin: auto;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  width: 95%; }
+  @media screen and (min-width: 40em) {
+    /* line 345, site.css.scss */
+    .modal .modal-inner {
+      max-height: 70%;
+      padding: 3em;
+      width: 60%; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 345, site.css.scss */
+    .modal .modal-inner {
+      width: 50%; } }
+  /* line 367, site.css.scss */
+  .modal .modal-inner .modal-intro {
+    margin-bottom: 1em; }
+  /* line 371, site.css.scss */
+  .modal .modal-inner .modal-content {
+    color: #333; }
+    @media screen and (min-width: 40em) {
+      /* line 371, site.css.scss */
+      .modal .modal-inner .modal-content {
+        -webkit-columns: 2 8em;
+        -moz-columns: 2 8em;
+        columns: 2 8em; } }
+  /* line 379, site.css.scss */
+  .modal .modal-inner a.cta {
+    color: #fff;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    /* line 385, site.css.scss */
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+/* line 391, site.css.scss */
+.modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible; }
+/* line 396, site.css.scss */
+.modal .modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em; }
+
+/* line 401, site.css.scss */
+.modal-open {
+  overflow: hidden; }
+
+/* line 409, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
