@@ -6,35 +6,32 @@ $visual-grid-color: #DD9D9D;
 $visual-grid-opacity: 0.4;
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
+//@import "vendor/materialize/materialize";
 
-body {
-  $large-screen: 50em !default;
-  $medium-screen: 30em !default;
-  background: #EEF1F4;
-  color: rgba(39, 48, 53, 0.8);
-  text-align: left;
-  font-family: "freight-text-pro", "adobe-garamond-pro", serif;
-  font-weight: 400;
-  font-size: 0.875em;
-}
 
-a {
-  text-decoration: none;
-  color: #7B838D;
-    
-    &:hover {
-      color:#3E7593;
-    }
-}
+// Base
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
-}
+  // Color
+
+$link-text: #7B838D;
+$link-text-hover: #3E7593 ;
+$screenshot-black: #273035;
+$screenshot-dark-grey: #3E474D;
+
+$button-text: #CECECE;
+$button-background: #3E7593;
+$button-hover: #5F8FA9;
+
+
+  // Typeogrpahy
+
+$font-stack:  "freight-text-pro", "adobe-garamond-pro", serif;
+$font-stack-headers: "adobe-garamond-pro", "freight-text-pro", serif;
+
 
 h1 {
   color: rgba(0,0,0,0.5);
-  font-family: "adobe-garamond-pro", "freight-text-pro", serif;
+  font-family: $font-stack-headers;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0;
@@ -43,7 +40,7 @@ h1 {
 h2 {
 
   &.quote {
-    font-family: "freight-text-pro", "adobe-garamond-pro", serif;
+    font-family: $font-stack;
     color:#3E7593;
     font-style: italic;
     font-weight: 400;
@@ -59,14 +56,90 @@ h4 {}
 
 h5 {}
 
-p {}
+p {
+  font-family: $font-stack;
+  font-size: em(14);
+  line-height: em(24);
+  color: #273035;
+}
+
+.emphasis {
+  text-transform: none;
+  font-style: italic;
+}
 
 
+  // Base Styles
 
+
+body {
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
+  background: #EEF1F4;
+  color: rgba(39, 48, 53, 0.8);
+  text-align: left;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: em(16);
+}
+
+a {
+  text-decoration: none;
+  color: $link-text;
+    
+    &:hover {
+      color: $link-text-hover;
+      outline: 0;
+    }
+
+    &:active{
+      outline: 0;
+    }
+}
+
+.logo img {
+  height: 18.75em;
+  margin-top: 6em;
+}
+
+.button {
+  border-radius: em(2);
+  border:none;
+  min-height: em(60);
+  min-width: em(80);
+  background-color: $button-background;
+  color: $button-text;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;  
+  transition: all .3s ease-out;
+  text-align: center;
+  letter-spacing: .5px;
+  line-height: 36px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0 2em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color:$button-hover;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    outline: 0;
+  }
+
+  &:active, &:focus {
+    outline: 0;
+  }
+}
 
 .doc {
   margin: 3em 0;
-  font-family:"freight-text-pro", "adobe-garamond-pro", serif;
+  font-family:$font-stack;
   font-size: 1.1em;
   font-weight: 300;
 
@@ -84,7 +157,6 @@ p {}
     }
   }
 }
-
 
 section {
   @include outer-container;
@@ -159,7 +231,7 @@ section {
       float: left;
       text-align: center;
       line-height: 1.5em;
-      padding-top: 4.2em;
+      padding-top: 3.6em;
     }
   }
 
@@ -189,7 +261,7 @@ section {
     width: 100%;
     color: #7B838D;
     text-transform: uppercase;
-    font-family: "adobe-garamond-pro", "freight-text-pro", serif;
+    font-family: $font-stack-headers;
 
     @include media ($medium-screen) {
       background: transparent;
@@ -250,9 +322,17 @@ section {
 
     p {
       padding-left: 1em;
+      @include span-columns(6.5 of 8);
     }
-  }  
+  }
+
+  .button {
+    margin: 5em 1em;
+  }
+
 }
+
+
 
 
 // Modal
@@ -404,7 +484,29 @@ section {
 
 
 
-// Thoughtbot
+// Animations
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+  //Thoughtbot welcome
 
 .welcome {
   -webkit-animation-name: welcome;
@@ -429,3 +531,43 @@ section {
     -webkit-transform: scale(1);
   }
 }
+
+  // Fade In
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+  // Fade In Down
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
