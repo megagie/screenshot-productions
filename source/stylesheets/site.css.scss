@@ -137,6 +137,34 @@ a {
   }
 }
 
+.circle {
+
+  &.small {
+    width: em(140);
+    height: em(140);
+    border-radius: em(70);
+    border: em(1) solid #979797;
+
+  }
+
+  &.medium {
+    width: em(216);
+    height: em(216);
+    border-radius: em(108);
+    border: em(1) solid #979797;
+
+  }
+
+  &.large {
+    width: em(368);
+    height: em(368);
+    border-radius: em(184);
+    border: em(1) solid #979797;
+
+  }
+
+}
+
 .doc {
   margin: 3em 0;
   font-family:$font-stack;
