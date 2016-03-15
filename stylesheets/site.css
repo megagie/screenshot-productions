@@ -355,26 +355,6 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* line 12, vendor/neat/grid/_visual-grid.scss */
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
-  background-image: -moz-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
-  background-image: -ms-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
-  background-image: -o-linear-gradient(left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #DD9D9D 0, #DD9D9D 6.17215%, transparent 6.17215%, transparent 8.5298%, #DD9D9D 8.5298%, #DD9D9D 14.70196%, transparent 14.70196%, transparent 17.05961%, #DD9D9D 17.05961%, #DD9D9D 23.23176%, transparent 23.23176%, transparent 25.58941%, #DD9D9D 25.58941%, #DD9D9D 31.76157%, transparent 31.76157%, transparent 34.11922%, #DD9D9D 34.11922%, #DD9D9D 40.29137%, transparent 40.29137%, transparent 42.64902%, #DD9D9D 42.64902%, #DD9D9D 48.82117%, transparent 48.82117%, transparent 51.17883%, #DD9D9D 51.17883%, #DD9D9D 57.35098%, transparent 57.35098%, transparent 59.70863%, #DD9D9D 59.70863%, #DD9D9D 65.88078%, transparent 65.88078%, transparent 68.23843%, #DD9D9D 68.23843%, #DD9D9D 74.41059%, transparent 74.41059%, transparent 76.76824%, #DD9D9D 76.76824%, #DD9D9D 82.94039%, transparent 82.94039%, transparent 85.29804%, #DD9D9D 85.29804%, #DD9D9D 91.4702%, transparent 91.4702%, transparent 93.82785%, #DD9D9D 93.82785%, #DD9D9D 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 960px;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-
 /* line 32, site.css.scss */
 h1 {
   color: rgba(0, 0, 0, 0.5);
@@ -420,17 +400,18 @@ a {
   /* line 90, site.css.scss */
   a:hover {
     color: #3E7593;
-    outline: 0; }
-  /* line 95, site.css.scss */
+    outline: 0;
+    transition: all 0.2s ease-in; }
+  /* line 96, site.css.scss */
   a:active {
     outline: 0; }
 
-/* line 100, site.css.scss */
+/* line 101, site.css.scss */
 .logo img {
   height: 18.75em;
   margin-top: 6em; }
 
-/* line 105, site.css.scss */
+/* line 106, site.css.scss */
 .button {
   border-radius: 0.125em;
   border: none;
@@ -454,41 +435,41 @@ a {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
   padding: 0 2em;
   text-transform: uppercase; }
-  /* line 129, site.css.scss */
+  /* line 130, site.css.scss */
   .button:hover {
-    background-color: #5F8FA9;
+    background-color: #22465A;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     outline: 0; }
-  /* line 135, site.css.scss */
+  /* line 136, site.css.scss */
   .button:active, .button:focus {
     outline: 0; }
 
-/* line 142, site.css.scss */
+/* line 143, site.css.scss */
 .circle.small {
   width: 8.75em;
   height: 8.75em;
   border-radius: 4.375em;
   border: 0.0625em solid #979797; }
-/* line 150, site.css.scss */
+/* line 151, site.css.scss */
 .circle.medium {
   width: 13.5em;
   height: 13.5em;
   border-radius: 6.75em;
   border: 0.0625em solid #979797; }
-/* line 158, site.css.scss */
+/* line 159, site.css.scss */
 .circle.large {
   width: 23em;
   height: 23em;
   border-radius: 11.5em;
   border: 0.0625em solid #979797; }
 
-/* line 168, site.css.scss */
+/* line 169, site.css.scss */
 .doc {
   margin: 3em 0;
   font-family: "freight-text-pro", "adobe-garamond-pro", serif;
   font-size: 1.1em;
   font-weight: 300; }
-  /* line 174, site.css.scss */
+  /* line 175, site.css.scss */
   .doc a {
     border: 1px solid white;
     border-radius: 3px;
@@ -496,13 +477,13 @@ a {
     color: white;
     text-decoration: none;
     transition: color 0.1s linear; }
-    /* line 181, site.css.scss */
+    /* line 183, site.css.scss */
     .doc a:hover {
       background: rgba(0, 0, 0, 0.2);
       color: white;
       transition: all 0.15s linear; }
 
-/* line 189, site.css.scss */
+/* line 191, site.css.scss */
 section {
   max-width: 960px;
   margin-left: auto;
@@ -513,7 +494,7 @@ section {
     content: "";
     display: table; }
 
-/* line 193, site.css.scss */
+/* line 195, site.css.scss */
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -525,17 +506,17 @@ section {
     content: "";
     display: table; }
 
-/* line 208, site.css.scss */
+/* line 211, site.css.scss */
 .navigation .navigation-menu-button {
   display: block;
   float: right;
   margin: 0;
   padding-top: 0.5em; }
   @media screen and (min-width: 30em) {
-    /* line 208, site.css.scss */
+    /* line 211, site.css.scss */
     .navigation .navigation-menu-button {
       display: none; } }
-/* line 220, site.css.scss */
+/* line 223, site.css.scss */
 .navigation .navigation-wrapper {
   position: relative;
   float: left;
@@ -550,7 +531,7 @@ section {
   /* line 89, vendor/neat/grid/_span-columns.scss */
   .navigation .navigation-wrapper:last-child {
     margin-right: 0; }
-/* line 226, site.css.scss */
+/* line 229, site.css.scss */
 .navigation .logo {
   float: left;
   float: left;
@@ -561,30 +542,30 @@ section {
   .navigation .logo:last-child {
     margin-right: 0; }
   @media screen and (min-width: 30em) {
-    /* line 226, site.css.scss */
+    /* line 229, site.css.scss */
     .navigation .logo {
       float: none;
       text-align: center;
       display: block; } }
   @media screen and (min-width: 50em) {
-    /* line 226, site.css.scss */
+    /* line 229, site.css.scss */
     .navigation .logo {
       float: left; } }
   @media screen and (min-width: 30em) {
-    /* line 240, site.css.scss */
+    /* line 243, site.css.scss */
     .navigation .logo img {
       max-height: 80px;
       padding-right: 16em;
       margin-top: -.8em;
       margin-left: -13.5em; } }
   @media screen and (min-width: 50em) {
-    /* line 240, site.css.scss */
+    /* line 243, site.css.scss */
     .navigation .logo img {
       max-height: 120px;
       padding-right: 13em;
       margin-top: -.8em;
       margin-left: -13.5em; } }
-/* line 257, site.css.scss */
+/* line 260, site.css.scss */
 .navigation nav {
   float: none;
   float: left;
@@ -595,13 +576,13 @@ section {
   .navigation nav:last-child {
     margin-right: 0; }
   @media screen and (min-width: 30em) {
-    /* line 257, site.css.scss */
+    /* line 260, site.css.scss */
     .navigation nav {
       float: left;
       text-align: center;
       line-height: 1.5em;
       padding-top: 3.6em; } }
-/* line 269, site.css.scss */
+/* line 272, site.css.scss */
 .navigation ul.navigation-menu {
   clear: both;
   display: none;
@@ -610,15 +591,15 @@ section {
   padding: 0;
   width: 100%; }
   @media screen and (min-width: 30em) {
-    /* line 269, site.css.scss */
+    /* line 272, site.css.scss */
     .navigation ul.navigation-menu {
       display: block;
       margin: 0;
       padding: 0; } }
-  /* line 283, site.css.scss */
+  /* line 286, site.css.scss */
   .navigation ul.navigation-menu.show {
     display: block; }
-/* line 289, site.css.scss */
+/* line 292, site.css.scss */
 .navigation ul li.nav-link {
   display: block;
   text-align: right;
@@ -626,46 +607,52 @@ section {
   color: #7B838D;
   text-transform: uppercase;
   font-family: "adobe-garamond-pro", "freight-text-pro", serif; }
-  /* line 297, site.css.scss */
+  /* line 300, site.css.scss */
   .navigation ul li.nav-link.nav-button {
     text-transform: capitalize;
     color: #273035;
     border: solid 1px #273035;
     border-radius: 3px;
-    padding: 0.35em 0.5em; }
+    padding: 0.35em 0 0.35em 1em; }
+    /* line 307, site.css.scss */
+    .navigation ul li.nav-link.nav-button:hover {
+      background-color: rgba(62, 117, 142, 0.1);
+      transition: all 0.2s ease-in; }
+    /* line 312, site.css.scss */
+    .navigation ul li.nav-link.nav-button a {
+      color: #273035; }
   @media screen and (min-width: 30em) {
-    /* line 289, site.css.scss */
+    /* line 292, site.css.scss */
     .navigation ul li.nav-link {
       background: transparent;
       display: inline;
       text-decoration: none;
       width: auto; } }
-/* line 314, site.css.scss */
+/* line 325, site.css.scss */
 .navigation li.nav-link a {
   display: inline-block; }
   @media screen and (min-width: 50em) {
-    /* line 314, site.css.scss */
+    /* line 325, site.css.scss */
     .navigation li.nav-link a {
       padding-right: 1em; } }
 
-/* line 328, site.css.scss */
+/* line 339, site.css.scss */
 .hero.container {
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
   align-items: center;
-  background: no-repeat center center url("/screenshot-productions/images/screenshot-hero-bg.jpg");
+  background: no-repeat center center fixed url("/screenshot-productions/images/ocean-bg.jpg");
   background-position: right;
   background-size: cover;
-  min-height: 77em;
-  margin-top: -10em; }
+  min-height: 9.0625em;
+  margin-top: -8em; }
 @media screen and (min-width: 50em) {
-  /* line 325, site.css.scss */
+  /* line 336, site.css.scss */
   .hero {
     background-size: cover;
     background-position: left; } }
-/* line 343, site.css.scss */
+/* line 355, site.css.scss */
 .hero .hero-logo {
   margin: auto; }
-/* line 347, site.css.scss */
+/* line 359, site.css.scss */
 .hero.content {
   float: left;
   display: block;
@@ -675,12 +662,12 @@ section {
   .hero.content:last-child {
     margin-right: 0; }
   @media screen and (min-width: 50em) {
-    /* line 347, site.css.scss */
+    /* line 359, site.css.scss */
     .hero.content {
       text-align: left;
       padding-top: 8em;
       padding-left: 4.5em; } }
-  /* line 356, site.css.scss */
+  /* line 368, site.css.scss */
   .hero.content p {
     padding-left: 1em;
     float: left;
@@ -690,35 +677,35 @@ section {
     /* line 89, vendor/neat/grid/_span-columns.scss */
     .hero.content p:last-child {
       margin-right: 0; }
-/* line 362, site.css.scss */
+/* line 374, site.css.scss */
 .hero .button {
   margin: 5em 1em; }
-/* line 366, site.css.scss */
+/* line 378, site.css.scss */
 .hero .circle {
   margin: -10.5em 0 0 0; }
-  /* line 369, site.css.scss */
+  /* line 381, site.css.scss */
   .hero .circle.small {
     margin-left: -1em; }
-  /* line 373, site.css.scss */
+  /* line 385, site.css.scss */
   .hero .circle.medium {
     margin-left: 2em; }
 
-/* line 405, site.css.scss */
+/* line 417, site.css.scss */
 .modal label {
   cursor: pointer;
   margin-bottom: 0; }
-/* line 410, site.css.scss */
+/* line 422, site.css.scss */
 .modal label img {
   border-radius: 150px;
   display: block;
   max-width: 300px; }
-/* line 416, site.css.scss */
+/* line 428, site.css.scss */
 .modal .modal-state {
   display: none; }
-/* line 420, site.css.scss */
+/* line 432, site.css.scss */
 .modal .modal-trigger {
   padding: 0.8em 1em; }
-/* line 424, site.css.scss */
+/* line 436, site.css.scss */
 .modal .modal-fade-screen {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -735,10 +722,10 @@ section {
   visibility: hidden;
   z-index: 99999999999; }
   @media screen and (min-width: 53.75em) {
-    /* line 424, site.css.scss */
+    /* line 436, site.css.scss */
     .modal .modal-fade-screen {
       padding-top: 10em; } }
-  /* line 438, site.css.scss */
+  /* line 450, site.css.scss */
   .modal .modal-fade-screen .modal-bg {
     position: absolute;
     top: 0;
@@ -746,7 +733,7 @@ section {
     bottom: 0;
     left: 0;
     cursor: pointer; }
-/* line 444, site.css.scss */
+/* line 456, site.css.scss */
 .modal .modal-close {
   position: absolute;
   top: 1.5em;
@@ -755,7 +742,7 @@ section {
   width: 1.5em;
   background: #fff;
   cursor: pointer; }
-  /* line 450, site.css.scss */
+  /* line 462, site.css.scss */
   .modal .modal-close:after, .modal .modal-close:before {
     position: absolute;
     top: 3px;
@@ -773,17 +760,17 @@ section {
     content: '';
     display: block;
     margin: -3px 0 0 -1px; }
-  /* line 461, site.css.scss */
+  /* line 473, site.css.scss */
   .modal .modal-close:hover:after, .modal .modal-close:hover:before {
     background: #c4c4c4; }
-  /* line 466, site.css.scss */
+  /* line 478, site.css.scss */
   .modal .modal-close:before {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg); }
-/* line 471, site.css.scss */
+/* line 483, site.css.scss */
 .modal .modal-inner {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -798,69 +785,69 @@ section {
   position: relative;
   width: 95%; }
   @media screen and (min-width: 40em) {
-    /* line 471, site.css.scss */
+    /* line 483, site.css.scss */
     .modal .modal-inner {
       max-height: 70%;
       padding: 3em;
       width: 60%; } }
   @media screen and (min-width: 53.75em) {
-    /* line 471, site.css.scss */
+    /* line 483, site.css.scss */
     .modal .modal-inner {
       width: 50%; } }
-  /* line 493, site.css.scss */
+  /* line 505, site.css.scss */
   .modal .modal-inner .modal-intro {
     margin-bottom: 1em; }
-  /* line 497, site.css.scss */
+  /* line 509, site.css.scss */
   .modal .modal-inner .modal-content {
     color: #333; }
     @media screen and (min-width: 40em) {
-      /* line 497, site.css.scss */
+      /* line 509, site.css.scss */
       .modal .modal-inner .modal-content {
         -webkit-columns: 2 8em;
         -moz-columns: 2 8em;
         columns: 2 8em; } }
-  /* line 505, site.css.scss */
+  /* line 517, site.css.scss */
   .modal .modal-inner a.cta {
     color: #fff;
     display: inline-block;
     margin-right: 0.5em;
     margin-top: 1em; }
-    /* line 511, site.css.scss */
+    /* line 523, site.css.scss */
     .modal .modal-inner a.cta:last-child {
       padding: 0 2em; }
-/* line 517, site.css.scss */
+/* line 529, site.css.scss */
 .modal .modal-state:checked + .modal-fade-screen {
   opacity: 1;
   visibility: visible; }
-/* line 522, site.css.scss */
+/* line 534, site.css.scss */
 .modal .modal-state:checked + .modal-fade-screen .modal-inner {
   top: 0.5em; }
 
-/* line 527, site.css.scss */
+/* line 539, site.css.scss */
 .modal-open {
   overflow: hidden; }
 
-/* line 535, site.css.scss */
+/* line 547, site.css.scss */
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
-/* line 540, site.css.scss */
+/* line 552, site.css.scss */
 .animated.infinite {
   animation-iteration-count: infinite; }
 
-/* line 544, site.css.scss */
+/* line 556, site.css.scss */
 .animated.hinge {
   animation-duration: 2s; }
 
-/* line 548, site.css.scss */
+/* line 560, site.css.scss */
 .animated.flipOutX,
 .animated.flipOutY,
 .animated.bounceIn,
 .animated.bounceOut {
   animation-duration: .75s; }
 
-/* line 557, site.css.scss */
+/* line 569, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
@@ -878,7 +865,7 @@ section {
     opacity: 1; }
   to {
     -webkit-transform: scale(1); } }
-/* line 583, site.css.scss */
+/* line 595, site.css.scss */
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 2s; }
@@ -888,7 +875,7 @@ section {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 602, site.css.scss */
+/* line 614, site.css.scss */
 .fadeInDown {
   animation-name: fadeInDown;
   animation-duration: 2s; }
@@ -900,7 +887,7 @@ section {
   to {
     opacity: 1;
     transform: none; } }
-/* line 622, site.css.scss */
+/* line 634, site.css.scss */
 .fadeInUp {
   animation-name: fadeInUp; }
 
