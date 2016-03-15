@@ -337,8 +337,8 @@ section {
   $large-screen: 50em !default;
   
   &.container {
-    //-webkit-clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
-    //clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
     align-items: center;
     background: no-repeat center center fixed image_url("/images/ocean-bg.jpg");
     background-position: right;
@@ -539,6 +539,19 @@ section {
 .modal-open {
   overflow: hidden;
 }
+
+
+// Art
+
+.art {
+  //-webkit-clip-path: polygon(0 0, 0% 100%, 100% 81%, 0% 100%);
+  //clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+  align-items: center;
+  background: no-repeat center center image_url("/images/bridge.jpg");
+  background-position: right;
+  overflow: visible;
+
+  }
 
 
 
