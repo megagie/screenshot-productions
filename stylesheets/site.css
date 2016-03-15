@@ -638,6 +638,8 @@ section {
 
 /* line 339, site.css.scss */
 .hero.container {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
   align-items: center;
   background: no-repeat center center fixed url("/screenshot-productions/images/ocean-bg.jpg");
   background-position: right;
@@ -827,27 +829,34 @@ section {
 .modal-open {
   overflow: hidden; }
 
-/* line 547, site.css.scss */
+/* line 546, site.css.scss */
+.art {
+  align-items: center;
+  background: no-repeat center center url("/screenshot-productions/images/bridge.jpg");
+  background-position: right;
+  overflow: visible; }
+
+/* line 560, site.css.scss */
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
-/* line 552, site.css.scss */
+/* line 565, site.css.scss */
 .animated.infinite {
   animation-iteration-count: infinite; }
 
-/* line 556, site.css.scss */
+/* line 569, site.css.scss */
 .animated.hinge {
   animation-duration: 2s; }
 
-/* line 560, site.css.scss */
+/* line 573, site.css.scss */
 .animated.flipOutX,
 .animated.flipOutY,
 .animated.bounceIn,
 .animated.bounceOut {
   animation-duration: .75s; }
 
-/* line 569, site.css.scss */
+/* line 582, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
@@ -865,7 +874,7 @@ section {
     opacity: 1; }
   to {
     -webkit-transform: scale(1); } }
-/* line 595, site.css.scss */
+/* line 608, site.css.scss */
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 2s; }
@@ -875,7 +884,7 @@ section {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 614, site.css.scss */
+/* line 627, site.css.scss */
 .fadeInDown {
   animation-name: fadeInDown;
   animation-duration: 2s; }
@@ -887,7 +896,7 @@ section {
   to {
     opacity: 1;
     transform: none; } }
-/* line 634, site.css.scss */
+/* line 647, site.css.scss */
 .fadeInUp {
   animation-name: fadeInUp; }
 
