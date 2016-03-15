@@ -220,10 +220,12 @@ section {
   .navigation-wrapper {
     @include clearfix;
     position: relative;
+    @include span-columns(12);
   }
 
   .logo {
     float: left;
+    @include span-columns(6 of 12);
 
     @include media ($medium-screen) {
       float: none;
@@ -245,7 +247,7 @@ section {
 
       @include media ($large-screen) {
         max-height: 120px;
-        padding-right: 16em;
+        padding-right: 13em;
         margin-top: -.8em;
         margin-left: -13.5em;
       }
@@ -254,6 +256,7 @@ section {
 
   nav {
     float: none;
+    @include span-columns(6 of 12);
 
     @include media ($medium-screen) {
       float: left;
@@ -291,6 +294,15 @@ section {
     text-transform: uppercase;
     font-family: $font-stack-headers;
 
+    &.nav-button {
+      text-transform: capitalize;
+      color: #273035;
+      border: solid 1px #273035;
+      border-radius: 3px;
+      padding: 0.35em 0.5em;
+
+    }
+
     @include media ($medium-screen) {
       background: transparent;
       display: inline;
@@ -305,13 +317,6 @@ section {
     @include media ($large-screen) {
       padding-right: 1em;
     }
-  }
-  &.button {
-    text-transform: none;
-    color: #273035;
-    border: solid 1px #273035;
-    border-radius: 3px;
-
   }
 }
 
@@ -356,6 +361,19 @@ section {
 
   .button {
     margin: 5em 1em;
+  }
+
+  .circle {
+    margin: -10.5em 0 0 0;
+
+    &.small {
+      margin-left: -1em;
+    }
+
+    &.medium{
+      margin-left: 2em;
+    }
+
   }
 
 }
@@ -564,6 +582,7 @@ section {
 
 .fadeIn {
   animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 @keyframes fadeIn {
@@ -582,6 +601,7 @@ section {
 
 .fadeInDown {
   animation-name: fadeInDown;
+  animation-duration: 2s;
 }
 
 @keyframes fadeInDown {
@@ -595,6 +615,26 @@ section {
     transform: none;
   }
 }
+
+
+  // Fade In Up
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
 
 
