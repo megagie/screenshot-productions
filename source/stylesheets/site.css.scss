@@ -24,6 +24,7 @@ $button-background: #3E7593;
 $button-hover: #22465A;
 
 
+
   // Typeogrpahy
 
 $font-stack:  "freight-text-pro", "adobe-garamond-pro", serif;
@@ -85,6 +86,12 @@ p {
   font-size: em(14);
   line-height: em(24);
   color: #273035;
+
+  &.emphasis {
+  font-weight:800;
+  font-size: em(18);
+  line-height: em(27);
+  }
 }
 
 .emphasis {
@@ -92,6 +99,7 @@ p {
   font-weight: 300;
   font-style: italic;
 }
+
 
 
   // Base Styles
