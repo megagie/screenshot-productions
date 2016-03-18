@@ -1,0 +1,248 @@
+// Base
+
+  // Color
+
+$link-text: #7B838D;
+$link-text-hover: #3E7593 ;
+$screenshot-black: #273035;
+$screenshot-blue-black: #30393E;
+$screenshot-dark-grey: rgba(39, 48, 53, .80);
+$screenshot-light-blue: rgba(62, 117, 147, .29);
+
+$button-text: #CECECE;
+$button-background: #3E7593;
+$button-hover: #22465A;
+
+
+
+
+  // Typeogrpahy
+
+$font-stack:  "freight-text-pro", "adobe-garamond-pro", serif;
+$font-stack-headers: "adobe-garamond-pro", "freight-text-pro", serif;
+
+
+h1 {
+  color: rgba(0,0,0,0.5);
+  font-family: $font-stack-headers;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-family: $font-stack-headers;
+  font-size: em(32);
+  color: $screenshot-blue-black;
+  letter-spacing: em(2);
+  font-weight: 300;
+  text-transform: uppercase; 
+
+  &.quote {
+    font-family: $font-stack;
+    color:#3E7593;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    font-size: em(32);
+    letter-spacing: em(-0.28);
+  }
+
+}
+
+h3 {
+  font-family: $font-stack-headers;
+  color: $screenshot-blue-black;
+  font-weight: 800;
+  font-size: em(24);
+  line-height: em(24);
+
+  &.quote {
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: em(24);
+    font-style: italic;
+  }
+}
+
+h4 {}
+
+h5 {}
+
+p {
+  font-family: $font-stack;
+  font-weight: 300;
+  letter-spacing: em(0.2);
+  font-size: em(14);
+  line-height: em(24);
+  color: #273035;
+
+  &.emphasis {
+  font-weight:800;
+  font-size: em(18);
+  line-height: em(24);
+  margin-bottom: em(10);
+  }
+}
+
+.emphasis {
+  text-transform: none;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+  // Base Styles
+
+
+body {
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
+  background: #EEF1F4;
+  color: rgba(39, 48, 53, 0.8);
+  text-align: left;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: em(16);
+}
+
+a {
+  text-decoration: none;
+  color: $link-text;
+    
+    &:hover {
+      color: $link-text-hover;
+      outline: 0;
+      transition: all 0.2s ease-in;
+    }
+
+    &:active{
+      outline: 0;
+    }
+}
+
+.logo img {
+  height: 18.75em;
+  margin-top: 6em;
+}
+
+.button {
+  border-radius: em(2);
+  border:none;
+  min-height: em(60);
+  min-width: em(80);
+  background-color: $button-background;
+  color: $button-text;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;  
+  transition: all .3s ease-out;
+  text-align: center;
+  letter-spacing: .5px;
+  line-height: 36px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0 2em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color:$button-hover;
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    outline: 0;
+  }
+
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+.card{
+  transition: box-shadow .25s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 20px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.circle {
+
+  &.xx-small {
+    width: em(24);
+    height: em(24);
+    border-radius: em(12);
+    border: em(1) solid #979797;
+  }
+
+  &.x-small {
+    width: em(50);
+    height: em(50);
+    border-radius: em(25);
+    border: em(1) solid #979797;
+  }
+
+  &.small {
+    width: em(140);
+    height: em(140);
+    border-radius: em(70);
+    border: em(1) solid #979797;
+
+  }
+
+  &.medium {
+    width: em(216);
+    height: em(216);
+    border-radius: em(108);
+    border: em(1) solid #979797;
+
+  }
+
+  &.large {
+    width: em(368);
+    height: em(368);
+    border-radius: em(184);
+    border: em(1) solid #979797;
+
+  }
+
+}
+
+.doc {
+  margin: 3em 0;
+  font-family:$font-stack;
+  font-size: 1.1em;
+  font-weight: 300;
+
+  a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.75em 0.7em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:hover {
+      background: rgba(0,0,0,0.2);
+      color: white;
+      transition: all 0.15s linear;
+    }
+  }
+}
+
+section {
+  @include outer-container;
+}
+
+.container{
+  @include outer-container(100%);
+  @include omega;
+
+}

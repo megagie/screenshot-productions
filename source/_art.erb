@@ -1,46 +1,36 @@
 <!--Featured Art and Archives-->
 
 
+<div class="art circle large right"></div>
+<div class="art circle large left"></div>
+<div class="art circle x-small"></div>
+<div class="art circle xx-small"></div>
 
 <div class="art-background">
 
 <section>
 
-  <h2><span class="emphasis">the</span> Art</h2>
+  <h2 class="art"><span class="emphasis">the</span> Art</h2>
   
     <div class="art content">
 
       <!--featured work -->  
         <div class="art featured container card">
 
-         <div class="art featured content">        
-          <h3>Shoshin</h3>
-          <h3 class="quote">“In the beginner’s mind there are many possibilities, in the expert’s mind there are few "</h3>
-          <p>An outdoor real-world exploration of the self, utilizing Bluetooth technology and sensory experience to provoke enlightenment.</p> 
-          <p>Inspired by Shunryu Suzuki’s Zen Mind, Beginner’s Mind and Joanna Newsom’s Divers</p>
+          <article class="art featured content"> 
 
-          <!--reviews
-          <h4>Reviews</h4>
-            <ul>
-              <li><a href="">The Examiner</a></li>
-              <li><a href="">Blumhouse</a></li>
-              <li><a href="">HorrorBuzz</a></li>
-              <li><a href="">Theme Park Adventure</a></li>
-            </ul>
-            -->
-          <button class="button animated fadeIn">Purchase Tickets</button>
-          </div>
+            <%= partial "shoshin-featured" %>       
+
+          </article>
 
         </div>
 
-      <!-- archives -->
-        <div class="art archives container">
+        <!-- archives -->
+      <div class="art archives container">
 
           <div class="art archives content">
 
-            <div class="modal">
-              <%= partial "art-profile-fear" %>
-            </div>
+             <%= partial "fear-archive" %>
 
           </div>  
 

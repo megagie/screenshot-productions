@@ -1,0 +1,59 @@
+// Hero
+
+.hero {
+  $large-screen: 50em !default;
+  
+  &.container {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+    align-items: center;
+    background: no-repeat center center fixed image_url("/images/ocean-bg.jpg");
+    background-position: right;
+    background-size: cover;
+    min-height: em(1000);
+    margin-top: -8em;
+  }      
+
+  @include media($large-screen) {
+    background-size: cover;
+    background-position: left;
+  }
+
+  .hero-logo {
+    margin: auto;
+  }
+  
+  &.content {
+    @include span-columns(8);
+
+    @include media($large-screen) {
+      text-align: left;
+      padding-top: 5em;
+      padding-left: 4.5em;
+    }
+
+    p {
+      padding-left: 1em;
+      @include span-columns(6.5 of 8);
+    }
+  }
+
+  .button {
+    margin: 5em 1em;
+  }
+
+  .circle {
+    margin: -10.5em 0 0 0;
+
+    &.small {
+      margin-left: -1em;
+    }
+
+    &.medium{
+      margin-left: 2em;
+    }
+
+  }
+
+}
+

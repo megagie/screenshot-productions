@@ -1,0 +1,135 @@
+
+
+
+// Navigation
+
+
+.navigation {
+  position: relative;
+  z-index: 50;
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
+
+  // Mobile view
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    padding-top: 0.5em;
+
+    @include media ($medium-screen) {
+      display: none;
+    }
+  }
+
+  // Nav menu
+  .navigation-wrapper {
+    @include clearfix;
+    position: relative;
+    @include span-columns(12);
+  }
+
+  .logo {
+    float: left;
+    @include span-columns(6 of 12);
+
+    @include media ($medium-screen) {
+      float: none;
+      text-align: center;
+      display: block;
+    }
+
+    @include media ($large-screen) {
+      float: left;
+    }
+
+    img {
+      @include media ($medium-screen) {
+        max-height: 80px;
+        padding-right: 16em;
+        margin-top: -.8em;
+        margin-left: -13.5em;
+      }
+
+      @include media ($large-screen) {
+        max-height: 120px;
+        padding-right: 13em;
+        margin-top: -.8em;
+        margin-left: -13.5em;
+      }
+    }
+  }  
+
+  nav {
+    float: none;
+    @include span-columns(6 of 12);
+
+    @include media ($medium-screen) {
+      float: left;
+      text-align: center;
+      line-height: 1.5em;
+      padding-top: 3.6em;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+
+    @include media ($medium-screen) {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: #7B838D;
+    text-transform: uppercase;
+    font-family: $font-stack-headers;
+
+    &.nav-button {
+      text-transform: capitalize;
+      color: #273035;
+      border: solid 1px #273035;
+      border-radius: 3px;
+      padding: 0.35em 0 0.35em 1em;
+
+      &:hover {
+        background-color: rgba(62, 117, 142, 0.1);
+        transition: all 0.2s ease-in;
+        }
+
+      a {
+        color: $screenshot-black;
+      }
+    }
+
+    @include media ($medium-screen) {
+      background: transparent;
+      display: inline;
+      text-decoration: none;
+      width: auto;
+    }
+  }
+
+  li.nav-link a {
+    display: inline-block;
+
+    @include media ($large-screen) {
+      padding-right: 1em;
+    }
+  }
+}
