@@ -1,0 +1,50 @@
+// Hero
+
+.hero {
+  $large-screen: 50em !default;
+  
+  &.container {
+    align-items: center;
+  }      
+
+  @include media($large-screen) {
+    background-size: cover;
+    background-position: left;
+  }
+
+  .hero-logo {
+    margin: auto;
+  }
+  
+  &.content {
+
+    @include media($large-screen) {
+      text-align: left;
+      padding-top: 5em;
+      padding-left: 4.5em;
+    }
+
+    p {
+      padding-left: 1em;
+    }
+  }
+
+  .button {
+    margin: 5em 1em;
+  }
+
+  .circle {
+    margin: -10.5em 0 0 0;
+
+    &.small {
+      margin-left: -1em;
+    }
+
+    &.medium{
+      margin-left: 2em;
+    }
+
+  }
+
+}
+

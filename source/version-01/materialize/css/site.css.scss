@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import "normalize";
+$visual-grid: true;
+$visual-grid-color: #DD9D9D;
+$visual-grid-opacity: 0.4;
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+@import "vendor/materialize/materialize";
+
+@import "base";
+@import "header";
+@import "hero";
+
+
+
+
+
+
+// Art
+
+.art-background {
+  //-webkit-clip-path: polygon(0 0, 0% 100%, 100% 81%, 0% 100%);
+  //clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+  align-items: center;
+ background:#CECECE;
+  //background: no-repeat center center image_url("/images/bridge.jpg");
+  background-position: right;
+  overflow: visible;
+  position: relative;
+  top: -44em;
+  z-index: -1;
+
+  }
+
+.art {
+
+  &.circle {
+    z-index: 1;
+    position: relative;
+    top: -18em;
+    border: 1px solid $screenshot-light-blue; 
+
+    &.large.left {
+      margin-left: 49em;
+      margin-top: -23em;
+    }
+
+    &.large.right {
+      margin-left: 56em;
+    }
+
+    &.x-small {
+      margin-top: em(20);
+    }
+
+    &.xx-small {
+      margin-top: em(40);
+    }
+  }
+
+  &.content {
+  }
+
+  &.featured {
+
+    &.container {
+    }
+  }
+}
+
+h2.art {
+    float: right;
+    position: relative;
+    top: 3em;
+}
+
+
+
+// Animations
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+  //Thoughtbot welcome
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+}
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+  // Fade In
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+  // Fade In Down
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+  // Fade In Up
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+

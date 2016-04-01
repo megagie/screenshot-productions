@@ -1,0 +1,31 @@
+
+
+
+// Navigation
+
+
+
+  // Nav items
+  ul li.nav-link {
+    text-align: right;
+    color: #7B838D;
+    text-transform: uppercase;
+    font-family: $font-stack-headers;
+
+    &.nav-button {
+      text-transform: capitalize;
+      color: #273035;
+      border: solid 1px #273035;
+      border-radius: 3px;
+      padding: 0.35em 0 0.35em 1em;
+
+      &:hover {
+        background-color: rgba(62, 117, 142, 0.1);
+        transition: all 0.2s ease-in;
+        }
+
+      a {
+        color: $screenshot-black;
+      }
+    }
+  }

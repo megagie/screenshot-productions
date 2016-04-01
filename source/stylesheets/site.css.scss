@@ -1,231 +1,179 @@
 @charset "utf-8";
 @import "normalize";
-$visual-grid: true;
-$visual-grid-color: #DD9D9D;
-$visual-grid-opacity: 0.4;
+//$visual-grid: true;
+//$visual-grid-color: #DD9D9D;
+//$visual-grid-opacity: 0.4;
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-//@import "vendor/materialize/materialize";
-
-@import "base";
-@import "header";
-@import "hero";
+@import "vendor/materialize/materialize";
 
 
+// Dev
+
+//.container {background-color:rgba(62, 117, 142, 0.25); height:100%;}
+
+//.container-wide .row {background-color:rgba(238, 110, 115, 0.25)!important; height: 100% !important;}
 
 
-// Modal
+// Base
 
-.modal {
-  $base-border-color: #dcdcdc !default;
-  $base-border-radius: 3px !default;
-  $base-background-color: #fff !default;
-  $base-font-size: 1em !default;
-  $base-line-height: 1.5em !default;
-  $action-color: #477dca !default;
-  $dark-gray: #333 !default;
-  $light-gray: #ddd !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
-  $modal-padding: 3em;
-  $modal-background: $base-background-color;
-  $modal-close-color: $light-gray;
-  $modal-image-height: 135px;
-  $modal-image-width: $modal-image-height;
-  $modal-trigger-image-width: 300px;
+  // Color
 
-  label {
-    cursor: pointer;
-    margin-bottom: 0;
+$link-text: #7B838D;
+$link-text-hover: #3E7593 ;
+$screenshot-black: #273035;
+$screenshot-blue-black: #30393E;
+$screenshot-dark-grey: rgba(39, 48, 53, .80);
+$screenshot-light-blue: rgba(62, 117, 147, .29);
+
+$button-text: #CECECE;
+$button-background: #3E7593;
+$button-hover: #22465A;
+
+
+
+
+  // Typeogrpahy
+
+$font-stack:  "freight-text-pro", "adobe-garamond-pro", serif;
+$font-stack-headers: "adobe-garamond-pro", "freight-text-pro", serif;
+
+
+h1 {
+  color: rgba(0,0,0,0.5);
+  font-family: $font-stack-headers;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-family: $font-stack-headers;
+  font-size: em(32);
+  color: $screenshot-blue-black;
+  letter-spacing: em(2);
+  font-weight: 300;
+  text-transform: uppercase; 
+
+  &.quote {
+    font-family: $font-stack;
+    color:#3E7593;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    font-size: em(32);
+    letter-spacing: em(-0.28);
   }
 
-  label img {
-    border-radius: $modal-trigger-image-width / 2;
-    display: block;
-    max-width: $modal-trigger-image-width;
-  }
+}
 
-  .modal-state {
-    display: none;
-  }
+h3 {
+  font-family: $font-stack-headers;
+  color: $screenshot-blue-black;
+  font-weight: 800;
+  font-size: em(24);
+  line-height: em(24);
 
-  .modal-trigger {
-    padding: 0.8em 1em;
-  }
-
-  .modal-fade-screen { // overlay
-    @include transition(opacity 0.25s ease);
-    @include position(fixed, 0);
-    background-color: rgba(#000, 0.85);
-    opacity: 0;
-    padding-top: 0.6em;
-    text-align: left;
-    visibility: hidden;
-    z-index: 99999999999;
-
-    @include media($large-screen) {
-      padding-top: 10em;
-    }
-
-    .modal-bg {
-      @include position(absolute, 0);
-      cursor: pointer;
-    }
-  }
-
-  .modal-close {
-    @include position(absolute, ($modal-padding /2) ($modal-padding /2) null null);
-    @include size(1.5em);
-    background: $modal-background;
-    cursor: pointer;
-
-    &:after,
-    &:before {
-      @include position(absolute, 3px 3px 0 50%);
-      @include transform(rotate(45deg));
-      @include size(0.15em 1.5em);
-      background: $modal-close-color;
-      content: '';
-      display: block;
-      margin: -3px 0 0 -1px;
-    }
-
-    &:hover:after,
-    &:hover:before {
-      background: darken($modal-close-color, 10%);
-    }
-
-    &:before {
-      @include transform(rotate(-45deg));
-    }
-  }
-
-  .modal-inner {
-    @include transition(opacity 0.25s ease);
-    background: $modal-background;
-    border-radius: $base-border-radius;
-    margin-top: 0;
-    margin: auto;
-    max-height: 95%;
-    overflow: auto;
-    padding: $modal-padding / 2;
-    position: relative;
-    width: 95%;
-
-    @include media($medium-screen) {
-      max-height: 70%;
-      padding: $modal-padding;
-      width: 60%;
-    }
-
-    @include media($large-screen) {
-      width: 50%;
-    }
-
-    .modal-intro {
-      margin-bottom: 1em;
-    }
-
-    .modal-content {
-      color: $base-font-color;
-
-      @include media($medium-screen) {
-        @include columns(2 8em);
-      }
-    }
-
-    a.cta {
-      color: $base-background-color;
-      display: inline-block;
-      margin-right: 0.5em;
-      margin-top: 1em;
-
-      &:last-child {
-        padding: 0 2em;
-      }
-    }
-  }
-
-  .modal-state:checked + .modal-fade-screen {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .modal-state:checked + .modal-fade-screen .modal-inner {
-    top: 0.5em;
+  &.quote {
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: em(24);
+    font-style: italic;
   }
 }
 
-.modal-open {
-  overflow: hidden;
-}
+h4 {}
 
+h5 {}
 
-// Art
+p {
+  font-family: $font-stack;
+  font-weight: 300;
+  letter-spacing: em(0.2);
+  font-size: em(14);
+  line-height: em(24);
+  color: #273035;
 
-.art-background {
-  //-webkit-clip-path: polygon(0 0, 0% 100%, 100% 81%, 0% 100%);
-  //clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
-  align-items: center;
- background:#CECECE;
-  //background: no-repeat center center image_url("/images/bridge.jpg");
-  background-position: right;
-  overflow: visible;
-  position: relative;
-  top: -44em;
-  z-index: -1;
-
-  }
-
-.art {
-
-  &.circle {
-    z-index: 1;
-    position: relative;
-    top: -18em;
-    border: 1px solid $screenshot-light-blue; 
-
-    &.large.left {
-      margin-left: 49em;
-      margin-top: -23em;
-    }
-
-    &.large.right {
-      margin-left: 56em;
-    }
-
-    &.x-small {
-      margin-top: em(20);
-    }
-
-    &.xx-small {
-      margin-top: em(40);
-    }
-  }
-
-  &.content {
-    @include span-columns(12);
-  }
-
-  &.featured {
-
-    &.container {
-      @include span-columns(5 of 12);
-    }
+  &.emphasis {
+  font-weight:800;
+  font-size: em(18);
+  line-height: em(24);
+  margin-bottom: em(10);
   }
 }
 
-h2.art {
-  @include span-columns(3 of 12);
-    float: right;
-    position: relative;
-    top: 3em;
+.emphasis {
+  text-transform: none;
+  font-weight: 300;
+  font-style: italic;
 }
 
 
 
-// Animations
+  // Base Styles
+
+
+body {
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
+  background: #EEF1F4;
+  color: rgba(39, 48, 53, 0.8);
+  text-align: left;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: em(16);
+}
+
+a {
+  text-decoration: none;
+  color: $link-text;
+    
+    &:hover {
+      color: $link-text-hover;
+      outline: 0;
+      transition: all 0.2s ease-in;
+    }
+
+    &:active{
+      outline: 0;
+    }
+}
+
+// Page layout
+
+.parallax-container {height:600px;}
+
+// Nav layout
+
+nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 0 0;
+    height: 50px;
+    z-index:200;
+}
+
+.container-wide {
+    padding: 0 2em;
+}
+
+
+// Hero layout
+
+
+//Footer layout
+
+footer.page-footer {background: $screenshot-blue-black;}
+footer.page-footer .footer-copyright {background:rgba(0, 0, 0, .29);}
+
+
+
+// Animations classes
 
 .animated {
   animation-duration: 1s;
