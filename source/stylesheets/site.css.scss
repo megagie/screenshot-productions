@@ -25,6 +25,7 @@ $screenshot-black: #273035;
 $screenshot-blue-black: #30393E;
 $screenshot-dark-grey: rgba(39, 48, 53, .80);
 $screenshot-light-blue: rgba(62, 117, 147, .29);
+$screenshot-blue: #3E7593;
 
 $button-text: #CECECE;
 $button-background: #3E7593;
@@ -89,7 +90,7 @@ h3 {
 
   &.quote {
     font-family: $font-stack;
-    font-weight: 400;
+    font-weight: 100;
     font-size: em(18);
     line-height: em(24);
     font-style: italic;
@@ -104,8 +105,8 @@ p {
   font-family: $font-stack;
   font-weight: 300;
   letter-spacing: em(0.2);
-  font-size: em(14);
-  line-height: em(24);
+  font-size: em(16);
+  line-height: em(28);
   color: #273035;
 
   &.emphasis {
@@ -135,7 +136,7 @@ body {
   text-align: left;
   font-family: $font-stack;
   font-weight: 400;
-  font-size: em(16);
+  font-size: 16px;
 }
 
 a {
@@ -174,7 +175,7 @@ a {
   letter-spacing: .5px;
   line-height: 36px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
-  padding: 0 2em;
+  padding: 1em 2em;
   text-transform: uppercase;
 
   &:hover {
@@ -297,28 +298,67 @@ nav {
   text-transform: uppercase;
   font-family: $font-stack-headers;
 
-  ul li.nav-button {
+ .nav-button a {
     text-transform: capitalize;
     color: #ffffff;
     border: solid 1px #ffffff;
     border-radius: 3px;
-    padding: 0.35em 0 0.35em 1em;
+    padding: em(10) em(15);
+    display: inline;
   }
+
+  .nav-button a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+
 }
 
+
+nav ul a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.dropdown-content {
+  background-color:$screenshot-blue-black;
+  border-radius: 3px;
+  }
+
+  .dropdown-content p {  
+    color: #ffffff;
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  .dropdown-content li a {
+    color:$link-text-hover;
+  }
+
+  .dropdown-content li a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+nav .divider {background-color: rgba(255,255,255,0.28);}
 
 // Hero layout
 
 .hero {
-  &.parallax-container {height: 800px}
+  &.parallax-container {height: 100%; background-color: rgba(0,0,0,0.15);}
 
   &.content {
 
     p {
-      padding-left: 1em;
       color:#ffffff;
     }
   }
+
+.hero-content{
+  h3 {
+    color:$screenshot-blue; 
+  }
+}
 
   .hero-content {
     margin-top: em(140);
@@ -340,11 +380,11 @@ nav {
     margin: -10.5em 0 0 0;
 
     &.small {
-      margin-left: -1em;
+      margin-left: 5em;
     }
 
     &.medium{
-      margin-left: 2em;
+      margin-left: 8em;
     }
 
   }
@@ -352,10 +392,23 @@ nav {
 }
 
 
+// About layout
+
+.about-content {
+  margin-bottom: em(124);
+  margin-top: em(40);
+}
+
+
 //Footer layout
 
-footer.page-footer {background: $screenshot-blue-black;}
+footer.page-footer {background: $screenshot-blue; margin-top: 0;}
 footer.page-footer .footer-copyright {background:rgba(0, 0, 0, .29);}
+
+
+// Paywhirl
+
+div#badge {display: none;}
 
 
 
