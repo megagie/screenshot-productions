@@ -105,7 +105,7 @@ h4 {
 
 h5 {}
 
-p, ul {
+p {
   font-family: $font-stack;
   font-weight: 300;
   letter-spacing: em(0.2);
@@ -120,6 +120,16 @@ p, ul {
   margin-bottom: em(10);
   }
 }
+
+ul {
+  font-family: $font-stack;
+  font-weight: 300;
+  font-size: em(16);
+  letter-spacing: em(0.2);
+  line-height: em(28);
+}
+
+nav ul {line-height: 56px;}
 
 ul.list li {
   list-style-type: disc;
