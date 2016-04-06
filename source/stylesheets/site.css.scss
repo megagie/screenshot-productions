@@ -430,10 +430,29 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 // About layout
 
 .about-content {
-  margin-bottom: em(124);
+  margin-bottom: em(40);
   margin-top: em(40);
 }
 
+
+// Art 
+
+.art {
+
+  h3.quote { 
+  color: rgba(255, 255,255, 0.75);
+  font-size: em(26);
+  }
+
+  h2 {color: white;}
+
+  &.card {padding:20px; margin-top: -208px;}
+}
+
+.art-content {
+  margin-top: em(100);
+
+}
 
 //Footer layout
 
