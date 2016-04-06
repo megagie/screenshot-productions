@@ -97,11 +97,15 @@ h3 {
   }
 }
 
-h4 {}
+h4 {
+  font-size: 18px;
+  line-height: 110%;
+  margin: 42px 0 14px;
+  font-weight: bold;}
 
 h5 {}
 
-p {
+p, ul {
   font-family: $font-stack;
   font-weight: 300;
   letter-spacing: em(0.2);
@@ -115,6 +119,14 @@ p {
   line-height: em(24);
   margin-bottom: em(10);
   }
+}
+
+ul.list li {
+  list-style-type: disc;
+}
+
+ul.list {
+ padding-left: 32px;
 }
 
 .emphasis {
@@ -153,6 +165,12 @@ a {
       outline: 0;
     }
 }
+
+.logo-img {
+    width: em(124);
+    padding-bottom: em(40);
+
+  }
 
 .button {
   border-radius: em(2);
@@ -198,6 +216,13 @@ a {
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
   background-color: #fff;
+}
+
+.title {
+  &.card {
+    margin-top: -9em;
+    padding: 20px;
+  }
 }
 
 .circle {
@@ -404,6 +429,23 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 
 footer.page-footer {background: $screenshot-blue; margin-top: 0;}
 footer.page-footer .footer-copyright {background:rgba(0, 0, 0, .29);}
+
+
+//Membership layout
+
+.membership {
+  &.parallax-container {height: 424px;}
+}
+
+.membership .membership-content {
+    margin-top: 5.75em;
+  }
+
+
+// Membership styles
+
+body.membership {background-color: #ffffff;}  
+
 
 
 // Paywhirl
