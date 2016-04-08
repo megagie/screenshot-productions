@@ -101,7 +101,10 @@ h4 {
   font-size: 18px;
   line-height: 110%;
   margin: 42px 0 14px;
-  font-weight: bold;}
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
 
 h5 {}
 
@@ -303,6 +306,67 @@ a {
     }
   }
 }
+
+
+// Form Styles
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $screenshot-blue-black;
+    box-shadow: 0 1px 0 0 $screenshot-blue-black;
+}
+
+footer {
+
+  .button {
+    min-height: 2.5em;
+    line-height: 0em;
+    margin-top: 20px;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    color: white;
+  }
+
+/* label color */
+   .input-field label {
+     color: rgba(255, 255, 255, 0.45);
+   }
+   /* label focus color */
+   .input-field input[type=email]:focus + label {
+     color: #ffffff;
+   }
+
+   /* label underline color */
+   .input-field input[type=email] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.45);
+   }
+
+   /* label underline focus color */
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #ffffff;
+     box-shadow: 0 1px 0 0 #ffffff;
+   }
+   /* valid color */
+   .input-field input[type=email].valid {
+     border-bottom: 1px solid #ffffff;
+     box-shadow: 0 1px 0 0 #ffffff;
+   }
+   /* invalid color */
+   .input-field input[type=email].invalid {
+     border-bottom: 1px solid #ffffff;
+     box-shadow: 0 1px 0 0 #ffffff;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #ffffff;
+   }
+
+   .input-field .prefix ~ input, .input-field .prefix ~ textarea {
+    color: #ffffff;
+  }
+}
+        
 
 
 // Page layout
