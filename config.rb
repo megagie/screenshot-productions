@@ -36,7 +36,7 @@ end
 
 # Build-specific configuration
 configure :build do
-  set :http_prefix # '/screenshot-productions'
+  #set :http_prefix '/screenshot-productions'
   # Minify CSS on build
   activate :minify_css
 
