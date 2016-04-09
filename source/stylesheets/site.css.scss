@@ -503,6 +503,11 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 .about-content {
   margin-bottom: em(40);
   margin-top: em(40);
+
+  h3.quote {
+    color: $screenshot-blue;
+    margin-top: em(60); 
+  }
 }
 
 
@@ -526,10 +531,21 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 
 }
 
+div.dasgericht h2, div.dasgericht h3.quote {color: $screenshot-blue-black; }
+
 //Footer layout
 
-footer.page-footer {background: $screenshot-blue;}
+footer.page-footer {background: $screenshot-blue; margin-top: 0;}
 footer.page-footer .footer-copyright {background:rgba(0, 0, 0, .29);}
+
+footer {
+  div.container {
+    margin-bottom: 80px;
+  }
+
+  h5 {margin-top: em(32);}
+  h5.title {margin-bottom: em(42);}
+}
 
 
 //Membership layout
