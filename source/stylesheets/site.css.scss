@@ -19,8 +19,8 @@
 
   // Color
 
-$link-text: #7B838D;
-$link-text-hover: #3E7593 ;
+$link-text: #3E7593;
+$link-text-hover: #0B83C5 ;
 $screenshot-black: #273035;
 $screenshot-blue-black: #30393E;
 $screenshot-dark-grey: rgba(39, 48, 53, .80);
@@ -179,6 +179,7 @@ a {
       color: $link-text-hover;
       outline: 0;
       transition: all 0.2s ease-in;
+      text-decoration: underline;
     }
 
     &:active{
@@ -228,6 +229,10 @@ a {
     background-color: $button-hover;
   }
 }
+
+a.button:hover {text-decoration: none;}
+
+.alert {font-weight: bold;}
 
 .card{
   transition: box-shadow .25s;
@@ -415,6 +420,7 @@ nav {
 
   .nav-button a:hover {
     background: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
   }
 
 
@@ -425,6 +431,7 @@ nav ul a:hover {
   background: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .dropdown-content {
