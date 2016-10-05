@@ -27,9 +27,9 @@ $screenshot-dark-grey: rgba(39, 48, 53, .80);
 $screenshot-light-blue: rgba(62, 117, 147, .29);
 $screenshot-blue: #3E7593;
 
-$button-text: #CECECE;
-$button-background: #3E7593;
-$button-hover: #22465A;
+$button-text: white;
+$button-background: #3A6073;
+$button-hover: #859398;
 
 
 $mobile: new-breakpoint(max-width 500px 4);
@@ -461,7 +461,7 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
   &.content {
 
     p {
-      color:#ffffff;
+      color:#E6DADA;
     }
   }
 
@@ -479,7 +479,8 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 
   .logo-img {
     width: em(124);
-    padding-bottom: em(40);
+    padding-bottom: em(24);
+    margin-top: em(-52);
 
   }
 
@@ -520,10 +521,16 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 
 .art {
 
-  &.bardothodol{
-    &.parallax-container{height:700px;}
-    &.button{ margin:0 auto;}
+  &.therope {
+    &.parallax-container {
+     background: rgba(0, 0, 0, 0.7); /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, rgba(63, 76, 107, 0.2) , rgba(0, 0, 0, 0.75)); /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, rgba(63, 76, 107, 0.2) , rgba(0, 0, 0, 0.75)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &.quote-parallax{
+      &.parallax-container{height:400px;}
   }
+  }  
 
   h3.quote { 
   color: rgba(255, 255,255, 0.75);
@@ -532,6 +539,7 @@ nav .divider {background-color: rgba(255,255,255,0.28);}
 
   h2 {color: white;}
   h2.bardothodol-title {font-family:"trajan-sans-pro";color: #cccc00; font-weight:800; font-size:em(42);}
+  h2.therope-title {font-size:em(48); color: #ffffff; font-weight:500; text-align: center; margin-top:em(25); letter-spacing:em(2);}
 
   &.card {padding:20px; 
     &.shoshin {margin-top: -208px;}
@@ -565,7 +573,7 @@ div.dasgericht h2, div.dasgericht h3.quote {color: $screenshot-blue-black; }
 
 //Footer layout
 
-footer.page-footer {background: $screenshot-blue; margin-top: 0;}
+footer.page-footer {background: $screenshot-blue-black; margin-top: 0;}
 footer.page-footer .footer-copyright {background:rgba(0, 0, 0, .29);}
 
 footer {
