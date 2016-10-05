@@ -14,9 +14,12 @@
 /.sass-cache
 /.cache
 
+# Ignore the design directory
+/design
+
 # Ignore .DS_store file
 .DS_Store
 
-# Ignore the design directory
-/design
+# Ignore working files directory
+/version-01
 
